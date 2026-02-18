@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://duqciusjaro7x.cloudfront.net/sitemap.xml
