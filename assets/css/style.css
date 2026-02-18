@@ -564,9 +564,59 @@ footer {
     border: none;
     color: var(--color-white);
     background: var(--color-accent);
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.3s;
 }
 
-.btn-nav-book:hover {
-    background: var(--color-primary);
+.faq-question:hover {
     color: var(--color-accent);
+}
+
+.faq-question::after {
+    content: '+';
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.faq-item.active .faq-question::after {
+    content: '-';
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding-right: 2rem;
+}
+
+.faq-answer p {
+    padding-bottom: 1.5rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.breadcrumbs a {
+    color: #999;
+}
+
+.breadcrumbs a:hover {
+    color: var(--color-accent);
+}
+
+.breadcrumbs span {
+    margin: 0 0.5rem;
+    color: #ccc;
 }
