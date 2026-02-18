@@ -272,6 +272,55 @@ nav {
     color: var(--color-primary);
 }
 
+/* Service Hero (Restored) */
+/* Service Hero - Moved to bottom */
+
+/* Pricing List */
+.pricing-section {
+    background-color: var(--color-bg);
+}
+
+.pricing-list {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--color-white);
+    padding: var(--spacing-md);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+.pricing-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.pricing-item:last-child {
+    border-bottom: none;
+}
+
+.pricing-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+    color: var(--color-primary);
+}
+
+.pricing-info p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.price {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-accent);
+    font-weight: 600;
+    white-space: nowrap;
+    margin-left: 1rem;
+}
+
 /* About Section */
 .about {
     background-color: var(--color-white);
@@ -619,4 +668,49 @@ footer {
 .breadcrumbs span {
     margin: 0 0.5rem;
     color: #ccc;
+}
+
+/* Service Hero (Restored & Moved) */
+.service-hero {
+    height: 60vh;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    color: var(--color-white);
+    padding-top: 80px;
+    position: relative;
+    background-color: #111;
+}
+
+.service-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    z-index: 1;
+}
+
+.service-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 var(--spacing-sm);
+}
+
+.service-hero h1 {
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    margin-bottom: 1rem;
+    color: var(--color-white);
+}
+
+.service-hero p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.25rem;
 }
